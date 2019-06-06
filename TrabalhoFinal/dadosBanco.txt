@@ -1,0 +1,37 @@
+TABELAS PARA O BANCO DE DADOS
+tbCliente
+    idCliente,
+    nome(50),
+    cpf,
+    mesa,
+    pedido(RECEBIDO),
+
+tbGarcom
+    idGarcom,
+    idPedido,
+    idCliente,
+    nome(50),
+    cpf,
+    pedido,
+
+tbFuncionario
+    idFuncionario,
+    idCliente,
+    nome(50),
+    cargo(50),
+    regraAcesso,
+
+tbPedido
+    idPedido,
+    idCliente,
+    dataPedido,
+    statusPedido(),
+
+tbCardapio
+    idCardapio,
+    idFuncionario,
+    idCliente,
+    prato(150),
+    ingredientes(1000),
+
+teste
